@@ -55,7 +55,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun HobbyCircleTheme(
+fun NexusTheme(
   darkTheme: Boolean = isSystemInDarkTheme(),
   dynamicColor: Boolean = false, // Set false by default to showcase custom refined palette
   content: @Composable () -> Unit

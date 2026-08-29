@@ -91,7 +91,7 @@ import com.example.ui.screens.notifications.NotificationsScreen
 import com.example.ui.screens.onboarding.OnboardingTutorialDialog
 import com.example.ui.screens.profile.ProfileScreen
 import com.example.ui.theme.FacebookBlue
-import com.example.ui.theme.HobbyCircleTheme
+import com.example.ui.theme.NexusTheme
 import com.example.ui.viewmodel.HobbyViewModel
 
 enum class FacebookTab(
@@ -114,14 +114,14 @@ class MainActivity : ComponentActivity() {
     super.onCreate(savedInstanceState)
     enableEdgeToEdge()
     setContent {
-      HobbyCircleApp()
+      NexusApp()
     }
   }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HobbyCircleApp(
+fun NexusApp(
   viewModel: HobbyViewModel = viewModel()
 ) {
   val userProfile by viewModel.userProfile.collectAsState()
@@ -160,7 +160,7 @@ fun HobbyCircleApp(
 
   val isTopLevelDestination = FacebookTab.values().any { it.route == currentRoute }
 
-  HobbyCircleTheme(darkTheme = isDarkTheme) {
+  NexusTheme(darkTheme = isDarkTheme) {
     Scaffold(
       topBar = {
         if (isTopLevelDestination) {
