@@ -1,0 +1,6 @@
+{
+  "name": "Nexus",
+  "description": "Local hobbyist social network with private interest groups, map discovery, real-time event planning, encrypted direct messages, organizer reputation, offline sync, and collaborative workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
